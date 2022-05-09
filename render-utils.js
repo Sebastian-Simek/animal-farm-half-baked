@@ -15,7 +15,7 @@ export function renderListItem(animal) {
     span.textContent = animal.says;
 
     const a = document.createElement('a');
-    a.href = `/animal-facts/?=${animal.id}`;
+    a.href = `/animal-facts/?id=${animal.id}`;
     a.textContent = animal.name;
 
     div.append(img, nameSpan, span, a);
