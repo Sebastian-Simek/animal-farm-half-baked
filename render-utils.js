@@ -5,7 +5,7 @@ export function renderListItem(animal) {
     div.style.left = animal.left;
 
     const img = document.createElement('img');
-    img.src = `../assets/${animal.type}.svg`;
+    img.src = `./assets/${animal.type}.svg`;
 
     const a = document.createElement('a');
     a.href = `/animal-facts/?id=${animal.id}`;
